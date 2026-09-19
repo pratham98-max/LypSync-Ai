@@ -1,0 +1,12 @@
+{
+    "exclude": [
+        "**/venv",
+        "**/__pycache__",
+        "models/Wav2Lip/checkpoints",
+        "models/Wav2Lip/evaluation/test_filelists",
+        "temp",
+        "output"
+    ],
+    "reportMissingImports": true,
+    "pythonVersion": "3.11"
+}

@@ -1,0 +1,22 @@
+{
+    "input": {
+        "video_path": "samples/input_video.mp4",
+        "voice_sample_path": "samples/voice_sample.wav"
+    },
+    "output": {
+        "output_path": "output/result.mp4",
+        "temp_dir": "temp"
+    },
+    "settings": {
+        "target_language": "hi",
+        "whisper_model": "large-v3",
+        "voice_model": "xtts-v2",
+        "lip_sync_model": "wav2lip"
+    },
+    "advanced": {
+        "gpu_device": 0,
+        "sample_rate": 22050,
+        "preserve_quality": true,
+        "chunk_duration": 30
+    }
+}

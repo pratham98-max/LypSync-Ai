@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Project specific
+temp/
+output/
+samples/voice_sample.wav
+
+# Models and weights
+models/Wav2Lip/checkpoints/
+models/Wav2Lip/temp/
+models/Wav2Lip/results/
+*.pth
+*.h5
+*.weights
+*.bin
+
+# Logs
+*.log

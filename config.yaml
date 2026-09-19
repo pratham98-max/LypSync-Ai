@@ -1,0 +1,47 @@
+# Lip Sync Voice Clone Pipeline Configuration
+# ============================================
+
+input:
+  # Path to the source video (English audio)
+  video_path: "samples/sample1.mp4"
+  
+  # Path to voice sample for cloning (3-6 seconds minimum)
+  voice_sample_path: "samples/voice_sample.wav"
+
+output:
+  # Path for the final lip-synced video
+  output_path: "output/result.mp4"
+  
+  # Intermediate files directory
+  temp_dir: "temp"
+
+settings:
+  # Target language for translation
+  # Supported: hi (Hindi), ta (Tamil), te (Telugu), bn (Bengali), 
+  #            mr (Marathi), gu (Gujarati), kn (Kannada), ml (Malayalam), pa (Punjabi)
+  target_language: "hi"
+  
+  # Whisper model size: tiny, base, small, medium, large, large-v3
+  whisper_model: "base"
+  
+  # Voice cloning model: xtts-v2
+  voice_model: "xtts-v2"
+  
+  # Lip sync model: wav2lip, wav2lip_gan
+  lip_sync_model: "wav2lip"
+
+advanced:
+  # GPU device ID (-1 for CPU)
+  gpu_device: -1
+  
+  # Resize factor for faster processing (2 recommended for 720p+)
+  resize_factor: 2
+  
+  # Audio sample rate
+  sample_rate: 22050
+  
+  # Preserve original video quality
+  preserve_quality: true
+  
+  # Chunk size for processing long videos (in seconds)
+  chunk_duration: 30

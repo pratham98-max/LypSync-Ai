@@ -1,0 +1,41 @@
+# Core ML/DL
+torch>=2.0.0
+torchaudio>=2.0.0
+torchvision>=0.15.0
+
+# Speech Recognition
+openai-whisper>=20231117
+faster-whisper>=0.10.0
+
+# Translation - IndicTrans2
+transformers>=4.36.0
+sentencepiece>=0.1.99
+sacremoses>=0.1.1
+indic-nlp-library>=0.92
+
+# Voice Cloning - XTTS
+TTS>=0.22.0
+
+# Lip Sync - Wav2Lip
+librosa>=0.10.0
+scipy>=1.11.0
+numpy>=1.24.0
+
+# Video/Audio Processing
+opencv-python>=4.8.0
+ffmpeg-python>=0.2.0
+moviepy>=1.0.3
+pydub>=0.25.1
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.66.0
+requests>=2.31.0
+gdown>=4.7.1
+
+# Face Detection (for Wav2Lip)
+face-alignment>=1.4.1
+facexlib>=0.3.0
+
+# Web UI
+gradio>=6.0.0
